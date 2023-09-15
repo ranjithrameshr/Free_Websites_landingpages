@@ -23,3 +23,11 @@
   object-fit: $fit;
   object-position: $position;
 }
+
+// Extra Section BG
+@mixin ExtraSecBg($width: 100%, $position: center) {
+  width: $width;
+  height: $height;
+  object-fit: $fit;
+  object-position: $position;
+}
