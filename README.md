@@ -10,9 +10,9 @@ Description: This repository contains the landing page for our restaurant websit
 
 Website URL: [Web4Startup](https://www.web4startup.com)
 
-Website URL: [Email Address: ranjith20602@gmail.com:](mailto:ranjith20602@gmail.com)
+Email Address: [ranjith20602@gmail.com:](mailto:ranjith20602@gmail.com)
 
-Website URL: [Phone Number: +91-9597586322](tel:9597586322)
+Phone Number: [+91-9597586322](tel:9597586322)
 
 ---
 
