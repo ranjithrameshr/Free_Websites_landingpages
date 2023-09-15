@@ -154,6 +154,20 @@ h6 {
   background-color: #4a4a4a;
 }
 
+.faq .accordion .accordion-item {
+  background-color: transparent;
+  color: white;
+}
+.faq .accordion .accordion-item .accordion-button {
+  background-color: transparent !important;
+  color: var(--white);
+}
+.faq .accordion .accordion-item .accordion-button:after {
+  color: var(--white);
+  background: var(--white);
+  border-radius: 50px;
+}
+
 .footer2 {
   background-color: #222222;
 }

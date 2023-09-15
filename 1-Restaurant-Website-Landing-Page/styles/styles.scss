@@ -178,6 +178,26 @@ h6 {
   background-color: #4a4a4a;
 }
 
+// FAQ
+.faq {
+  .accordion {
+    .accordion-item {
+      background-color: transparent;
+      color: white;
+      .accordion-button {
+        background-color: transparent !important;
+        color: var(--white);
+
+        &:after {
+          color: var(--white);
+          background: var(--white);
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+}
+
 // Footer
 .footer2 {
   background-color: #222222;
