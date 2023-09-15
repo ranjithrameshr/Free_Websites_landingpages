@@ -9,6 +9,8 @@ Description: This repository contains the landing page for our restaurant websit
 **For Customized Application Development, Contact Us:**
 
 Website URL: [Web4Startup](https://www.web4startup.com)
+Website URL: [Email Address:](mailto:ranjith20602@gmail.com)
+Website URL: [Phone Number](tel:9597586322)
 
 ---
 
