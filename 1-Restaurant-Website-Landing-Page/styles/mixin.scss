@@ -1,0 +1,25 @@
+// Main Banner Mixin
+@mixin backgroundImage(
+  $background: var(--black),
+  $repeat: no-repeat,
+  $size: cover,
+  $position: center center
+) {
+  background-image: $background;
+  background-repeat: $repeat;
+  background-size: $size;
+  background-position: $position;
+}
+
+// Service Image Holder Mixin
+@mixin imageHolder(
+  $width: 100%,
+  $height: 100%,
+  $fit: cover,
+  $position: center
+) {
+  width: $width;
+  height: $height;
+  object-fit: $fit;
+  object-position: $position;
+}

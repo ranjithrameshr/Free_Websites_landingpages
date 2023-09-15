@@ -1,0 +1,203 @@
+// Font Family
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import "./mixin.scss";
+// @import "../icon/style.css";
+
+// Primary Root
+:root {
+  --primary: #e30011;
+  --secondary: #ffc53c;
+  --black: #212429;
+  --white: #ffffff;
+  --josefin: "Josefin Sans", sans-serif;
+  --ptsans: "PT Sans", sans-serif;
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--josefin);
+  font-size: 1.2rem;
+  line-height: 150%;
+  background-color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ptsans);
+  font-weight: 600;
+}
+
+// Button Style
+.btn-primary {
+  color: var(--white);
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+
+  i {
+    position: relative;
+    top: 2px;
+    margin-left: 5px;
+  }
+}
+
+// Header
+.header {
+  padding: 14px 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 9;
+  .brand {
+    width: 30%;
+
+    img {
+      height: 44px;
+    }
+  }
+
+  // Navigation
+  .navigations {
+    width: 70%;
+
+    ul {
+      list-style: none;
+
+      li {
+        a {
+          padding: 5px 10px;
+          text-decoration: none;
+          color: var(--white);
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+// Banner
+.main-banner {
+  @include backgroundImage(
+    $background:
+      url("../images/chicken-skewers-with-slices-sweet-peppers-dill.jpg")
+  );
+}
+
+// Banner Overlay
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    179deg,
+    rgba(39, 39, 39, 0.72),
+    rgba(0, 0, 0, 0.93)
+  );
+}
+
+// services
+.servies {
+  .image {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    img {
+      @include imageHolder;
+    }
+  }
+}
+
+// Mid Banner
+.newbanner {
+  @include backgroundImage(
+    $background:
+      url("../images/chicken-skewers-with-slices-sweet-peppers-dill.jpg")
+  );
+  position: relative;
+
+  .row {
+    z-index: 9;
+    position: relative;
+  }
+
+  h1 {
+    font-size: 80px;
+    font-weight: 900;
+  }
+  h2 {
+    font-size: 50px;
+    font-weight: 900;
+    color: red;
+  }
+  p {
+    font-size: 25px;
+  }
+  .btn {
+    color: white;
+  }
+}
+
+// Food Blog
+.food-blog {
+  .list {
+    padding: 25px;
+    border: 1px solid #fbfbfb;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px #c0c0c0;
+  }
+
+  .image {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    img {
+      @include imageHolder;
+    }
+  }
+}
+
+// Cta
+.footer1 {
+  background-color: #4a4a4a;
+}
+
+// Footer
+.footer2 {
+  background-color: #222222;
+  img {
+    width: 30%;
+  }
+  .list {
+    ul {
+      list-style: none;
+      padding-left: 0px !important;
+
+      li {
+        a {
+          padding: 5px 10px;
+          text-decoration: none;
+          color: var(--white);
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
