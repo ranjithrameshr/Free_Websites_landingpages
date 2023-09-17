@@ -46,10 +46,11 @@ h6 {
 
 .header {
   padding: 14px 0;
+  min-height: 90px;
   position: absolute;
   top: 0;
-  bottom: 0;
-  z-index: 9;
+  right: 0;
+  z-index: 99;
 }
 .header .brand {
   width: 30%;
@@ -60,6 +61,11 @@ h6 {
 .header .navigations {
   width: 70%;
 }
+@media (max-width: 900px) {
+  .header .navigations {
+    display: none !important;
+  }
+}
 .header .navigations ul {
   list-style: none;
 }
@@ -69,6 +75,15 @@ h6 {
   color: var(--white);
   font-size: 18px;
   font-weight: 400;
+}
+.header .cta-button .icon-menu-1 {
+  font-size: 30px;
+  display: none;
+}
+@media (max-width: 900px) {
+  .header .cta-button .icon-menu-1 {
+    display: block;
+  }
 }
 
 .main-banner {
@@ -116,6 +131,16 @@ h6 {
 .newbanner h1 {
   font-size: 80px;
   font-weight: 900;
+}
+@media (max-width: 900px) {
+  .newbanner h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .newbanner h1 {
+    font-size: 40px;
+  }
 }
 .newbanner h2 {
   font-size: 50px;
@@ -166,6 +191,10 @@ h6 {
   color: var(--white);
   background: var(--white);
   border-radius: 50px;
+}
+
+.extraSection .sec2p {
+  font-size: 20px;
 }
 
 .footer2 {
