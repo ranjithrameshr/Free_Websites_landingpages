@@ -1,6 +1,6 @@
 /* font family */
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Great+Vibes&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import './mixin.scss';
+@import "./mixin.scss";
 
 /* Primary root declaration */
 :root {
@@ -44,45 +44,33 @@ h6 {
   border-color: var(--primary) !important;
 }
 
-/* header ===================== */
-.header {
-  padding: 14px 0;
-
-  .brand {
-
-    width: 30%;
-
-    img {
-      height: 44px;
-    }
-  }
-
-  .navigations {
-    width: 70%;
-
-    ul {
-      list-style: none;
-
-      li {
-        a {
-          padding: 5px 10px;
-          text-decoration: none;
-          color: var(--black);
-          font-size: 18px;
-          font-weight: 400;
-        }
-      }
-    }
-  }
-}
-
 // main-banner
 .main-banner {
-  @include backgroundImage($background: url("../images/chicken-skewers-with-slices-sweet-peppers-dill.jpg"));
+  min-height: 100vh;
+  @include backgroundImage(
+    $background:
+      url("../images/group-people-working-out-business-plan-office.jpg")
+  );
+  .content {
+    padding: 3rem;
+    width: 50%;
+    @media (max-width: 500px) {
+      width: 100%;
+      padding: 1.5rem;
+    }
+  }
 }
 
 // services
-.services {
+.themes {
+  position: relative;
+  h2 {
+    font-size: 4rem;
+    line-height: 95%;
+    @media (max-width: 900px) {
+      font-size: 1.5rem;
+    }
+  }
   .image {
     width: 100%;
     height: 200px;
@@ -92,5 +80,9 @@ h6 {
     img {
       @include imageHolder;
     }
+  }
+  .count {
+    font-size: 156px;
+    color: #f0c660;
   }
 }
